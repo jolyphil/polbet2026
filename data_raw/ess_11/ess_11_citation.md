@@ -1,0 +1,1 @@
+European Social Survey European Research Infrastructure (ESS ERIC) (2026) *ESS11 - integrated file, edition 4.1* [Data set]. Sikt - Norwegian Agency for Shared Services in Education and Research. https://doi.org/10.21338/ess11e04_1.
