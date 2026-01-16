@@ -37,13 +37,13 @@ ess_11 <- ess_11_raw |>
     # (A) POLITISCHE PARTIZIPATION ----------------------------------------
     
     # Teilnahme an der letzten nationalen Wahl ----------------------------
-    wahlbeteiligung = case_when(
+    wahlbet = case_when(
       vote == 1 ~ "Ja",
       vote == 2 ~ "Nein",
       vote == 3 ~ "Nicht wahlberechtigt"
     ),
-    wahlbeteiligung = factor(
-      wahlbeteiligung,
+    wahlbet = factor(
+      wahlbet,
       levels = c("Nein", "Ja", "Nicht wahlberechtigt")
     ),
     
@@ -165,7 +165,7 @@ ess_11 <- ess_11_raw |>
     region = factor(region, levels = c("Westdeutschland", "Ostdeutschland"))
   ) |>
   select(
-    wahlbeteiligung,
+    wahlbet,
     kontakt,
     parteiaktiv,
     petition,
@@ -185,7 +185,7 @@ ess_11 <- ess_11_raw |>
 
 # Variablenlabels ---------------------------------------------------------
 
-attr(ess_11$wahlbeteiligung, "label") <- "Teilnahme an der letzten nationalen Wahl"
+attr(ess_11$wahlbet, "label") <- "Teilnahme an der letzten nationalen Wahl"
 attr(ess_11$kontakt, "label") <- "Kontakt mit Politiker:in oder Regierungsvertreter:in in den letzten 12 Monaten"
 attr(ess_11$parteiaktiv, "label") <- "Spende oder Mitarbeit in einer politischen Partei in den letzten 12 Monaten"
 attr(ess_11$petition, "label") <- "Petition unterschrieben in den letzten 12 Monaten"
