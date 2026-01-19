@@ -185,8 +185,8 @@ ess_11 <- ess_11_raw |>
 
 # Variablenlabels ---------------------------------------------------------
 
-attr(ess_11$wahlbet, "label") <- "Teilnahme an der letzten nationalen Wahl"
-attr(ess_11$kontakt, "label") <- "Kontakt mit Politiker:in oder Regierungsvertreter:in in den letzten 12 Monaten"
+attr(ess_11$wahlbet, "label") <- "Teilnahme an der letzten Bundestagswahl"
+attr(ess_11$kontakt, "label") <- "Kontakt mit Politiker*in oder Regierungsvertreter*in in den letzten 12 Monaten"
 attr(ess_11$parteiaktiv, "label") <- "Spende oder Mitarbeit in einer politischen Partei in den letzten 12 Monaten"
 attr(ess_11$petition, "label") <- "Petition unterschrieben in den letzten 12 Monaten"
 attr(ess_11$demo, "label") <- "Teilnahme an einer Demonstration in den letzten 12 Monaten"
@@ -194,11 +194,11 @@ attr(ess_11$boykott, "label") <- "Boykott von Produkten in den letzten 12 Monate
 attr(ess_11$links_rechts, "label") <- "Links-rechts-Selbsteinstufung"
 attr(ess_11$umverteilung, "label") <- "Unterstützung wirtschaftlicher Umverteilung"
 attr(ess_11$gender, "label") <- "Gender"
-attr(ess_11$alter, "label") <- "Alter der befragten Person"
+attr(ess_11$alter, "label") <- "Alter"
 attr(ess_11$einkommen, "label") <- "Haushaltsnettoeinkommen"
 attr(ess_11$bildung, "label") <- "Höchster Bildungsabschluss (ISCED)"
 attr(ess_11$gewerkschaft, "label") <- "Derzeitiges Gewerkschaftsmitglied"
-attr(ess_11$mighint, "label") <- "Migrationshintergrund"
+attr(ess_11$mighint, "label") <- "Selbst oder Eltern im Ausland geboren"
 attr(ess_11$wohnort, "label") <- "Wohnorttyp (Selbsteinschätzung)"
 attr(ess_11$region, "label") <- "Region (Ost- / Westdeutschland)"
 
