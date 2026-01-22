@@ -159,10 +159,10 @@ ess_11 <- ess_11_raw |>
     # Region (Ost-/Westdeutschland) ---------------------------------------
     region = if_else(
       region %in% c("DE3", "DE4", "DE8", "DED", "DEE", "DEG"),
-      "Ostdeutschland",
-      "Westdeutschland"
+      "Ost",
+      "West"
     ),
-    region = factor(region, levels = c("Westdeutschland", "Ostdeutschland"))
+    region = factor(region, levels = c("West", "Ost"))
   ) |>
   select(
     wahlbet,
